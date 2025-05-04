@@ -11,8 +11,7 @@ public class ChatFormatterService {
      * @param text The text to which the prefix will be added.
      * */
     public static String addPrefix(String text){
-        final ConfigurationService cs = ConfigurationService.getInstance();
-        return cs.getPrefix() + " " + ChatColor.RESET + text;
+        return ChatColor.RESET + text;
     }
 
     /**
